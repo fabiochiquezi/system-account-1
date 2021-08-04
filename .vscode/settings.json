@@ -12,6 +12,7 @@
 
         "tsconfig.json": true,
         "jest.config.ts": true,
+        "babel.config.js": true,
         ".editorconfig": true,
         ".eslintrc.json": true,
         ".eslintignore": true
