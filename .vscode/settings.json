@@ -1,0 +1,19 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+
+        "yarn-error.log": true,
+        "yarn.lock": true,
+        ".gitignore": true,
+
+        "tsconfig.json": true,
+        "jest.config.ts": true,
+        ".editorconfig": true,
+        ".eslintrc.json": true,
+        ".eslintignore": true
+    }
+}
