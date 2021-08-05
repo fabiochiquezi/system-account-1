@@ -5,7 +5,7 @@ const PORT = 3000
 const HOST = '0.0.0.0'
 
 app.get('/', (req, resp) => {
-  return resp.json({ msg: 'hello world!!' })
+  return resp.json({ msg: 'hello world yeahhh' })
 })
 
 app.listen(PORT, HOST)
