@@ -8,7 +8,7 @@
 
         "yarn-error.log": true,
         "yarn.lock": true,
-        ".gitignore": true,
+        // ".gitignore": true,
         ".vscode": true,
 
         "tsconfig.json": true,
@@ -18,7 +18,7 @@
         ".eslintrc.json": true,
         ".eslintignore": true,
         ".dockerignore": true,
-        // "docker-compose.yml": true,
+        "docker-compose.yml": true,
         "Dockerfile": true,
 
         ".env": true,
