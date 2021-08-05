@@ -1,9 +1,11 @@
 import express from 'express'
 
 const app = express()
-export const aVar = 'aaa'
+const PORT = 3000
+const HOST = '0.0.0.0'
+
 app.get('/', (req, resp) => {
   return resp.json({ msg: 'hello world!!' })
 })
 
-app.listen(3333)
+app.listen(PORT, HOST)
