@@ -7,8 +7,8 @@
   "scripts": {
     "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored",
     "start": "node dist/index.js",
-    "dev": "ts-node-dev --poll -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts",
-    "dev2": "nodemon --legacy-watch src/index.ts",
+    "dev": "ts-node-dev --poll -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify ./index.ts",
+    "dev2": "nodemon --legacy-watch ./index.ts",
     "test": "jest --runInBand"
   },
   "devDependencies": {
@@ -35,6 +35,7 @@
     "typescript": "^4.3.5"
   },
   "dependencies": {
+    "dotenv": "^10.0.0",
     "express": "^4.17.1"
   }
 }
