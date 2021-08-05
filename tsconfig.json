@@ -5,7 +5,7 @@
     "lib": ["es6"],
     "allowJs": true,
     "outDir": "./dist",
-    "rootDir": "./",
+    "rootDir": "./src",
     "removeComments": true,
     "typeRoots": [
       "./node_modules/@types",
@@ -19,8 +19,8 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "@helpers/*": ["helpers/*"]
+      "@helpers/*": ["./src/helpers/*"]
     },
   },
-  "include": ["src/**/*", "helpers/*", "./index.ts"]
+  "include": ["src/**/*"]
 }

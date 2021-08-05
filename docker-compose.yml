@@ -1,7 +1,7 @@
 version: "3"
 
 services:
-    api:
+    node:
         build: .
         command: yarn dev
         container_name: chiquezi-node
@@ -9,3 +9,13 @@ services:
             - "3000:3000"
         volumes:
             - .:/usr/app
+
+    mysql:
+        image: mysql
+        command: --default-authentication-plugin=mysql_native_password
+        container_name: chiquezi-mysql
+        restart: always
+        ports:
+            - 3310:3306
+        environment:
+            MYSQL_ROOT_PASSWORD: ok
