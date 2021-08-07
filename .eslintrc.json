@@ -17,7 +17,7 @@
     ],
     "ignorePatterns": ["*.spec.ts", "*.test.ts", "*.spec.js", "*.test.js"],
     "rules": {
-        "comma-dangle": 0,
+        // "comma-dangle": 0,
 
         // TS
         "@typescript-eslint/no-explicit-any": "off",

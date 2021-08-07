@@ -10,6 +10,7 @@
         "yarn.lock": true,
         ".gitignore": true,
         ".vscode": true,
+        "readme.md": true,
 
         "tsconfig.json": true,
         "jest.config.ts": true,
@@ -22,5 +23,7 @@
         "Dockerfile": true,
 
         ".env": true,
+
+        "package.json": true
     }
 }

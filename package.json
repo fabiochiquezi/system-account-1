@@ -9,7 +9,7 @@
     "start": "node dist/index.js",
     "dev": "ts-node-dev --poll -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts",
     "dev2": "nodemon --legacy-watch src/index.ts",
-    "test": "jest --runInBand",
+    "test": "jest --watch --runInBand",
     "docker": "docker-compose up"
   },
   "devDependencies": {

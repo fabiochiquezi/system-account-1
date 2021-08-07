@@ -1,13 +1,19 @@
-import express from 'express'
 import dotenv from 'dotenv'
+import express from 'express'
+import authRoute from './auth'
 
-dotenv.config()
+// Config Express
 const app = express()
 const PORT = 3000
 const HOST = '0.0.0.0'
 
-app.get('/', (req, resp) => {
-  return resp.json({ msg: 'Hello World!!!' })
-})
+// Config Project
+dotenv.config()
+app.use(express.json())
 
-app.listen(PORT, HOST)
+// Routes
+app.use('/auth', authRoute)
+app.get('/', (req, res) => res.send('Hi there'))
+
+// Run
+app.listen(PORT, HOST, () => 'running on port 3000')
