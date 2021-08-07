@@ -8,7 +8,7 @@
 
         "yarn-error.log": true,
         "yarn.lock": true,
-        // ".gitignore": true,
+        ".gitignore": true,
         ".vscode": true,
 
         "tsconfig.json": true,
