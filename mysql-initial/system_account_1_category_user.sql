@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.26, for Win64 (x86_64)
 --
--- Host: localhost    Database: test
+-- Host: localhost    Database: system_account_1
 -- ------------------------------------------------------
 -- Server version	8.0.26
 
@@ -16,25 +16,28 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `testTable`
+-- Table structure for table `category_user`
 --
 
-DROP TABLE IF EXISTS `testTable`;
+DROP TABLE IF EXISTS `category_user`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `testTable` (
-  `name` varchar(50) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `category_user` (
+  `category_id` int NOT NULL AUTO_INCREMENT,
+  `position` varchar(30) NOT NULL,
+  PRIMARY KEY (`category_id`),
+  UNIQUE KEY `position` (`position`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `testTable`
+-- Dumping data for table `category_user`
 --
 
-LOCK TABLES `testTable` WRITE;
-/*!40000 ALTER TABLE `testTable` DISABLE KEYS */;
-INSERT INTO `testTable` VALUES ('fabio');
-/*!40000 ALTER TABLE `testTable` ENABLE KEYS */;
+LOCK TABLES `category_user` WRITE;
+/*!40000 ALTER TABLE `category_user` DISABLE KEYS */;
+INSERT INTO `category_user` VALUES (2,'admin'),(3,'moderator'),(4,'simple user'),(1,'superadmin');
+/*!40000 ALTER TABLE `category_user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -46,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-08-08 20:17:51
+-- Dump completed on 2021-08-08 22:50:52
