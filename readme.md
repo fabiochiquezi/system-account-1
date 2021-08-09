@@ -22,4 +22,4 @@ It's a simple system project (Node-MySQL) about account with some features like:
     HOST=var
     PORT=var
 
-2 - Create a database...
+2 - Create a database: go to your mysql manager, and run sql's file in ./mysql-initial folder in order to create a database initial

@@ -3,3 +3,8 @@ export type formAuthData = {
     password: string,
     verifyPassword?: string
 }
+
+export type authDomainType = {
+    email: string,
+    password: string
+}
