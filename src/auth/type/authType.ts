@@ -1,7 +1,6 @@
-export type formAuthData = {
+export type formDataType = {
     email: string,
     password: string,
-    verifyPassword?: string
 }
 
 export type authDomainType = {

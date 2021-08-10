@@ -8,6 +8,7 @@ describe('test "authDomain"', () => {
     it('shoud be success', () => {
         const email = 'test@test.com'
         const password = 'test12345'
+        const categoryUser = 1
 
         const auth = makeAuthDomain({email, password})
         expect(auth).toEqual({email, password})

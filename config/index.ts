@@ -1,5 +1,6 @@
 import dotenv from 'dotenv'
 import express from 'express'
+import userRoute from 'src/users'
 import authRoute from '../src/auth'
 
 dotenv.config()
@@ -8,6 +9,7 @@ app.use(express.json())
 
 // Routes
 app.use('/auth', authRoute)
+app.use('/users', userRoute)
 app.get('/', (req, res) => res.send('Hi there'))
 
 // Run
